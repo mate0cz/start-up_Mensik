@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <a href="#"><img src="../assets/logo.png" alt="logo"></a>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="contactUs.html">Kontakt</a></li>
+        <li><a href="products.html">Služby</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="review.html">Recenze</a></li>
+        <li><button class="sub-btn" onclick="popupToggle()">Odebírej</button></li>
+    </ul>
+</nav>
+<div class="mainpage-first">
+    <div class="main-img"><img src="/assets/photo-main.jpg"></div>
+    <div class="main-right">
+    <h2>NECH SI VYTVOŘIT WEB PROFESIONÁLY</h2>
+    <p>Vítejte na naší stránce, kde se specializujeme na tvorbu<br> webových stránek šitéch přímo na míru vašim potřebám.<br>
+        Jsme tady proto, abychom vám pomohli vytvořit online přítomnost,<br> která osloví a zaujme vaše návštěvníky.<br>
+        S naším týmem kreativních a zkušených profesionálů se můžete spolehnout<br> na moderní design, intuitivní navigaci a spolehlivý výkon.<br>
+        Začněte svou digitální cestu s námi a přeměňte své nápady ve skvělou online realitu!
+    </p>
+    </div>
+</div>
+<h2 class="team">NÁŠ TÝM</h2>
+<div class="gallery-wrap">
+    <img class="leftarrow" src="/assets/arrow-left.svg" id="backBtn">
+    <div class="gallery">
+        <div>
+            <span><img src="/assets/worker1.jpg"></span>
+            <span><img src="/assets/worker2.jpg"></span>
+            <span><img src="/assets/worker3.jpg"></span>
+        </div>
+        <div>
+            <span><img src="/assets/worker4.jpg"></span>
+            <span><img src="/assets/worker5.jpg"></span>
+            <span><img src="/assets/worker6.jpg"></span>
+        </div>
+    </div>
+    <img class="leftarrow" src="/assets/arrow-right.svg" id="nextBtn">
+</div>
+<div id="popup">
+    <div class="content">
+        <img src="/assets/email.png">
+        <h2>Odebírej Naše Novinky</h2>
+        <p>Tím že se stanete odběratelem našich novinek, tak se tím připojíte
+        mezi pár jedinců, kteří právě naše novinky odebírají. Jednou z výhod je,
+        že budete u všeho jako první, tudíž Vám nic neunikde. Děkujeme, že Nás podporujete Tým WebMinds.</p>
+        <div class="input-box">
+            <input type="email" name="email" placeholder="Váš Email" required>
+        </div>
+        <div class="input-box">
+            <input type="submit" name="submit" onclick="popupToggle()" value="Přihásit se" class="sub-btn">
+        </div>
+    </div>
+    <a class="close" onclick="popupToggle()"><img src="/assets/close.png"></a>
+</div>
+<h2 class="where-u-find-us">KDE NÁS NAJDETE</h2>
+<div class="google-map">
+    <div class="location">
+        <div class="location-frame">
+            <h1>Location</h1>
+            <p>Nad Ovčírnou IV 2528, 760 01 Zlín 1</p>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1303.0044214064342!2d17.661788376337828!3d49.219359388695516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713734ea3ef4b47%3A0x60019d1712db0876!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgcG9seXRlY2huaWNrw6EgLSBDZW50cnVtIG9kYm9ybsOpIHDFmcOtcHJhdnkgWmzDrW4!5e0!3m2!1scs!2scz!4v1712680749939!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<hr class="footer-hr">
+<footer>
+    <div class="icons">
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+    <ul class="footer-list">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="contactUs.html">Kontakt</a></li>
+        <li><a href="products.html">Služby</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="review.html">Recenze</a></li>
+    </ul>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

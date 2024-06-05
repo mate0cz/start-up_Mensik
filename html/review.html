@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/review.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <a href="#"><img src="../assets/logo.png" alt="logo"></a>
+  </div>
+  <ul class="menu">
+    <li><a href="index.html">Domů</a></li>
+    <li><a href="contactUs.html">Kontakt</a></li>
+    <li><a href="products.html">Služby</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="review.html">Recenze</a></li>
+    <li><button class="sub-btn" onclick="popupToggle()">Odebírej</button></li>
+  </ul>
+</nav>
+<div class="reviews">
+  <div class="inner">
+  <h1>RECENZE ZÁKAZNÍKŮ</h1>
+  <div class="border"></div>
+
+    <div class="row">
+      <div class="col">
+        <div class="review">
+          <img src="/assets/p1.jpg">
+          <div class="name">Petr N.</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <p>
+            Spolupráce s firmou na tvorbě naší webové stránky byla celkově průměrná. Design byl moderní a odpovídal našim požadavkům, ale proces realizace trval déle, než jsme očekávali. Komunikace mohla být lepší a pár detailů jsme museli několikrát opravovat. Výsledek je nakonec uspokojivý.
+          </p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="review">
+          <img src="/assets/p2.jpg">
+          <div class="name">Petr N.</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <p>
+            S firmou na tvorbě naší webové stránky jsem byl celkově spokojený. Design je moderní a plně odpovídá našim požadavkům. Realizace trvala o něco déle, než jsme původně očekávali, ale tým byl vždy ochotný provádět potřebné úpravy. Komunikace byla dobrá a výsledek předčil naše očekávání.
+          </p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="review">
+          <img src="/assets/p3.jpg">
+          <div class="name">Petr N.</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <p>
+
+            Spolupráce s firmou na tvorbě naší webové stránky byla skvělá. Design byl moderní a přesně odpovídal našim požadavkům. Realizace proběhla rychle a bez problémů. Komunikace byla výborná a všechny naše připomínky byly rychle zapracovány. Výsledek předčil naše očekávání a s radostí dávám 5 hvězdiček z 5.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="popup">
+  <div class="content">
+    <img src="/assets/email.png">
+    <h2>Odebírej Naše Novinky</h2>
+    <p>Tím že se stanete odběratelem našich novinek, tak se tím připojíte
+      mezi pár jedinců, kteří právě naše novinky odebírají. Jednou z výhod je,
+      že budete u všeho jako první, tudíž Vám nic neunikde. Děkujeme, že Nás podporujete Tým WebMinds.</p>
+    <div class="input-box">
+      <input type="email" name="email" placeholder="Váš Email" required>
+    </div>
+    <div class="input-box">
+      <input type="submit" name="submit" onclick="popupToggle()" value="Přihásit se" class="sub-btn">
+    </div>
+  </div>
+  <a class="close" onclick="popupToggle()"><img src="/assets/close.png"></a>
+</div>
+<footer>
+  <div class="icons">
+    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+  </div>
+  <ul class="footer-list">
+    <li><a href="index.html">Domů</a></li>
+    <li><a href="contactUs.html">Kontakt</a></li>
+    <li><a href="products.html">Služby</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="review.html">Recenze</a></li>
+  </ul>
+</footer>
+<script src="../js/review.js"></script>
+</body>
+</html>

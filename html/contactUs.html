@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <a href="#"><img src="../assets/logo.png" alt="logo"></a>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="contactUs.html">Kontakt</a></li>
+        <li><a href="products.html">Služby</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="review.html">Recenze</a></li>
+        <li><button class="sub-btn" onclick="popupToggle()">Odebírej</button></li>
+    </ul>
+</nav>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>KONTAKTUJ NÁS</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="3c0c82df-f76d-4f15-a514-24a48aae7e88">
+            <input type="text" name="name" placeholder="Vaše Jméno" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Váš Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Vaše Zpráva" class="contact-inputs" required></textarea>
+            <button type="submit">Odeslat</button>
+        </form>
+    </div>
+<div id="popup">
+    <div class="content">
+        <img src="/assets/email.png">
+        <h2>Odebírej Naše Novinky</h2>
+        <p>Tím že se stanete odběratelem našich novinek, tak se tím připojíte
+            mezi pár jedinců, kteří právě naše novinky odebírají. Jednou z výhod je,
+            že budete u všeho jako první, tudíž Vám nic neunikde. Děkujeme, že Nás podporujete Tým WebMinds.</p>
+        <div class="input-box">
+            <input type="email" name="email" placeholder="Váš Email" required>
+        </div>
+        <div class="input-box">
+            <input type="submit" name="submit" onclick="popupToggle()" value="Přihásit se" class="sub-btn">
+        </div>
+    </div>
+    <a class="close" onclick="popupToggle()"><img src="/assets/close.png"></a>
+</div>
+<footer>
+    <div class="icons">
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+    <ul class="footer-list">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="contactUs.html">Kontakt</a></li>
+        <li><a href="products.html">Služby</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="review.html">Recenze</a></li>
+    </ul>
+</footer>
+<script src="../js/contact_us.js"></script>
+</body>
+</html>
